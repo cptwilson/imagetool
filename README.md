@@ -1,5 +1,7 @@
 # imagetool
-ZDoom font/image tool
+Fork of Randy Heit's ZDoom font/image tool
+
+Now compiles on GNU/Linux!
 
 This is mainly used for converting image files to and from FON1/FON2 font formats.
 
