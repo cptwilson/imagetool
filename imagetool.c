@@ -94,23 +94,23 @@ int main (int argc, char **argv)
 		argstart = 1;
 	}
 
-	if (stricmp (argv[argstart], "confont") == 0)
+	if (strcasecmp (argv[argstart], "confont") == 0)
 	{
 		mode = MODE_ConFont;
 	}
-	else if (stricmp (argv[argstart], "image") == 0)
+	else if (strcasecmp (argv[argstart], "image") == 0)
 	{
 		mode = MODE_Image;
 	}
-	else if (stricmp (argv[argstart], "font") == 0)
+	else if (strcasecmp (argv[argstart], "font") == 0)
 	{
 		mode = MODE_Font;
 	}
-	else if (stricmp (argv[argstart], "xhair") == 0)
+	else if (strcasecmp (argv[argstart], "xhair") == 0)
 	{
 		mode = MODE_Crosshair;
 	}
-	else if (stricmp (argv[argstart], "script") == 0)
+	else if (strcasecmp (argv[argstart], "script") == 0)
 	{
 		if (argc - argstart < 2)
 		{
@@ -124,15 +124,15 @@ int main (int argc, char **argv)
 		}
 		return yyparse ();
 	}
-	else if (stricmp (argv[argstart], "pcx") == 0)
+	else if (strcasecmp (argv[argstart], "pcx") == 0)
 	{
 		mode = MODE_PCX;
 	}
-	else if (stricmp (argv[argstart], "bmp") == 0)
+	else if (strcasecmp (argv[argstart], "bmp") == 0)
 	{
 		mode = MODE_BMP;
 	}
-	else if (stricmp (argv[argstart], "ilbm") == 0)
+	else if (strcasecmp (argv[argstart], "ilbm") == 0)
 	{
 		mode = MODE_ILBM;
 	}

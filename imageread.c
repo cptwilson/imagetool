@@ -125,13 +125,13 @@ void LoadPic (char *filename, UBYTE **data, int *width, int *height,
 
 	if (namelen > 4)
 	{
-		if (stricmp (filename + namelen - 4, ".pcx") == 0)
+		if (strcasecmp (filename + namelen - 4, ".pcx") == 0)
 		{
 			LoadPCX (filename, data, width, height, srcwidth, cx, cy, palette);
 			SwapTrans (*data, *width, *height);
 			return;
 		}
-		else if (stricmp (filename + namelen - 4, ".bmp") == 0)
+		else if (strcasecmp (filename + namelen - 4, ".bmp") == 0)
 		{
 			LoadBMP (filename, data, width, height, srcwidth, cx, cy, palette);
 			SwapTrans (*data, *width, *height);
